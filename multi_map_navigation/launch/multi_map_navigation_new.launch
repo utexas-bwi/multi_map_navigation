@@ -1,0 +1,11 @@
+<launch>
+  <include file="$(find multi_map_navigation)/launch/add_map.launch"> 
+    <arg name="map_file" default="/nishome/aunwala/ros/rosbuild_ws/stage_multi_map_navigation/maps/3ne-real-new.yaml" />
+    <arg name="map_resolution" default=".05" />
+    <arg name="map_name" default="mymapyay"/>
+  </include>
+  <node pkg="multi_map_navigation" type="multi_map_navigation" name="multi_map_navigation" >
+  	
+  </node>
+</launch>
+

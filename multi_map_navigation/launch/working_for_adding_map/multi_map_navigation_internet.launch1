@@ -1,0 +1,19 @@
+<launch>
+    <include file="$(find multi_map_navigation)/launch/add_map.launch"> 
+        <!--
+        <arg name="map_file" default="/nishome/aunwala/ros/rosbuild_ws/stage_multi_map_navigation/maps/willow-up.yaml" />
+        <arg name="map_name" default="willow-uplol"/>
+        -->
+        <arg name="map_name" default="willow-down" />
+        <arg name="map_resolution" default=".05" />
+        <arg name="map_file" default="/nishome/aunwala/ros/rosbuild_ws/stage_multi_map_navigation/maps/willow-down.yaml" />
+    </include>
+    <!--
+    <node pkg="multi_map_navigation" type="multi_map_navigation" name="multi_map_navigation" output="screen">
+        <param name="definition_file" value="/nishome/aunwala/ros/rosbuild_ws/stage_multi_map_navigation/maps/cfg.yaml" />
+        <param name="transition_types" value="" />
+    </node>
+    -->
+</launch>
+
+
